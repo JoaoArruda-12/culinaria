@@ -7,6 +7,7 @@
 <title>Receitas Salgadas | Sabores da Casa</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,7 +19,7 @@ body{
     background:#eef5ff;
 }
 
-/* Cabeçalho */
+
 header{
     background:linear-gradient(to right,#1565c0,#42a5f5);
     color:white;
@@ -26,7 +27,11 @@ header{
     padding:35px;
 }
 
-/* Menu */
+header h1{
+    font-size:40px;
+}
+
+
 nav{
     background:#1976d2;
     text-align:center;
@@ -40,78 +45,97 @@ nav a{
     font-weight:bold;
 }
 
-/* Conteúdo */
+nav a:hover{
+    color:#bbdefb;
+}
+
+
 .container{
     width:90%;
+    max-width:1200px;
     margin:auto;
     padding:40px 0;
 }
-css id="receita flex"
+
+
 .receita{
     background:white;
     border-radius:20px;
     overflow:hidden;
     margin-bottom:35px;
     box-shadow:0 5px 18px rgba(0,0,0,0.15);
+
+    display:flex;
+    align-items:center;
 }
 
+
 .receita img{
-    width:100%;
-    height:180px;
+    width:350px;
+    height:250px;
     object-fit:cover;
 }
 
+
 .content{
+    flex:1;
     padding:25px;
 }
 
-h2{
+.content h2{
     color:#1565c0;
+    margin-bottom:15px;
 }
 
-h3{
+.content h3{
     color:#1976d2;
-    margin-top:15px;
+    margin:15px 0 10px;
 }
 
-ul{
+.content ul{
     margin-left:20px;
     line-height:1.8;
 }
 
-p{
+.content p{
     line-height:1.8;
+    color:#444;
 }
 
-/* Botão vídeo */
+
 .video{
     display:inline-block;
-    margin-top:15px;
-    background:#ff0000;
+    margin-top:20px;
+    background:#1e88e5;
     color:white;
-    padding:12px 18px;
-    border-radius:10px;
     text-decoration:none;
+    padding:12px 20px;
+    border-radius:12px;
     font-weight:bold;
 }
 
 .video:hover{
-    background:#cc0000;
+    background:#1565c0;
 }
 
-/* Botão voltar */
+
 .voltar{
     display:block;
+    width:220px;
     text-align:center;
     margin:40px auto;
-    width:220px;
     background:#1e88e5;
     color:white;
+    text-decoration:none;
     padding:14px;
     border-radius:12px;
-    text-decoration:none;
     font-weight:bold;
 }
+
+.voltar:hover{
+    background:#1565c0;
+}
+
 
 footer{
     background:#1565c0;
@@ -119,12 +143,26 @@ footer{
     text-align:center;
     padding:20px;
 }
+
+
+@media(max-width:768px){
+
+    .receita{
+        flex-direction:column;
+    }
+
+    .receita img{
+        width:100%;
+        height:220px;
+    }
+}
+
 </style>
 </head>
 <body>
 
 <header>
-    <h1>🍔 Receitas Salgadas</h1>
+    <h1>Receitas Salgadas</h1>
 </header>
 
 <nav>
@@ -134,105 +172,122 @@ footer{
 
 <div class="container">
 
-    <!-- MACARRÃO -->
+   
     <div class="receita">
-        <img src="macarrão ao molho branco.jpg">
+        <img src="macarrão ao molho branco.jpg"
+        alt="Macarrão Cremoso">
 
         <div class="content">
-            <h2>🍝 Macarrão Cremoso</h2>
+            <h2>Macarrão Cremoso</h2>
 
             <h3>Ingredientes:</h3>
             <ul>
-                <li>Macarrão</li>
-                <li>Creme de leite</li>
-                <li>Manteiga</li>
+                <li>500g de macarrão</li>
+                <li>1 caixa de creme de leite</li>
+                <li>2 colheres de manteiga</li>
+                <li>Queijo ralado</li>
+                <li>Sal a gosto</li>
+            </ul>
+
+            <h3>Modo de preparo:</h3>
+            <p>
+                Cozinhe o macarrão. Faça um molho com manteiga,
+                creme de leite e queijo. Misture tudo e sirva quente.
+            </p>
+
+            <a class="video"
+            href="https://youtu.be/WvqbI5RLMQ4"
+            target="_blank">
+                ▶️ Assistir vídeo
+            </a>
+        </div>
+    </div>
+
+  
+    <div class="receita">
+        <img src="ai-generated-freshly-fried-gourmet-french-fries-a-crunchy-and-unhealthy-snack-generated-by-ai-photo.jpg"
+        alt="Batata frita">
+
+        <div class="content">
+            <h2>Batata Frita</h2>
+
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>4 batatas grandes</li>
+                <li>Óleo para fritar</li>
+                <li>Sal a gosto</li>
+            </ul>
+
+            <h3>Modo de preparo:</h3>
+            <p>
+                Corte as batatas em tiras, aqueça o óleo e frite
+                até dourar. Finalize com sal.
+            </p>
+
+            <a class="video"
+            href="https://youtu.be/CYhYSoJrOLg"
+            target="_blank">
+                ▶️ Assistir vídeo
+            </a>
+        </div>
+    </div>
+
+   
+    <div class="receita">
+        <img src="Hamburguer-artesanal.webp"
+        alt="Hambúrguer">
+
+        <div class="content">
+            <h2>Hambúrguer</h2>
+
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>Pão de hambúrguer</li>
+                <li>Carne bovina</li>
                 <li>Queijo</li>
+                <li>Alface e tomate</li>
             </ul>
 
             <h3>Modo de preparo:</h3>
             <p>
-                Cozinhe o macarrão e misture com o molho cremoso.
+                Grelhe a carne, monte o hambúrguer
+                com queijo, salada e molho.
             </p>
 
-            <a class="video" href="https://youtu.be/WvqbI5RLMQ4" target="_blank">
-                ▶️ Ver vídeo
+            <a class="video"
+            href="https://youtu.be/1kAXt_bRgMc"
+            target="_blank">
+                ▶️ Assistir vídeo
             </a>
         </div>
     </div>
 
-    <!-- BATATA FRITA -->
+    
     <div class="receita">
-        <img src="ai-generated-freshly-fried-gourmet-french-fries-a-crunchy-and-unhealthy-snack-generated-by-ai-photo.jpg">
+        <img src="lasanha-bolonhesa-na-pressao.jpg"
+        alt="Lasanha">
 
         <div class="content">
-            <h2>🍟 Batata Frita</h2>
+            <h2>Lasanha</h2>
 
             <h3>Ingredientes:</h3>
             <ul>
-                <li>Batatas</li>
-                <li>Óleo</li>
-                <li>Sal</li>
-            </ul>
-
-            <h3>Modo de preparo:</h3>
-            <p>
-                Frite até dourar e tempere com sal.
-            </p>
-
-            <a class="video" href="https://youtu.be/CYhYSoJrOLg" target="_blank">
-                ▶️ Ver vídeo
-            </a>
-        </div>
-    </div>
-
-    <!-- HAMBÚRGUER -->
-    <div class="receita">
-        <img src="Hamburguer-artesanal.webp">
-
-        <div class="content">
-            <h2>🍔 Hambúrguer</h2>
-
-            <h3>Ingredientes:</h3>
-            <ul>
-                <li>Pão</li>
-                <li>Carne</li>
-                <li>Queijo</li>
-                <li>Salada</li>
-            </ul>
-
-            <h3>Modo de preparo:</h3>
-            <p>
-                Grelhe a carne e monte o hambúrguer.
-            </p>
-
-            <a class="video" href="https://youtu.be/kTg4svA2_4w" target="_blank">
-                ▶️ Ver vídeo
-            </a>
-        </div>
-    </div>
-
-    <!-- LASANHA -->
-    <div class="receita">
-        <img src="lasanha-bolonhesa-na-pressao.jpg">
-
-        <div class="content">
-            <h2>🍽️ Lasanha</h2>
-
-            <h3>Ingredientes:</h3>
-            <ul>
-                <li>Massa de lasanha</li>
+                <li>Massa para lasanha</li>
                 <li>Molho de tomate</li>
                 <li>Carne moída</li>
-                <li>Queijo</li>
+                <li>Queijo e presunto</li>
             </ul>
 
             <h3>Modo de preparo:</h3>
             <p>
-                Monte as camadas e leve ao forno.
+                Monte camadas de molho, carne,
+                queijo e massa. Asse por 40 minutos.
             </p>
 
-            <a class="video" href="https://youtu.be/UUe0-wKIWVY" target="_blank">
-                ▶️ Ver vídeo
+            <a class="video"
+            href="https://youtu.be/UUe0-wKIWVY"
+            target="_blank">
+                ▶️ Assistir vídeo
             </a>
         </div>
     </div>
@@ -249,4 +304,3 @@ footer{
 
 </body>
 </html>
-

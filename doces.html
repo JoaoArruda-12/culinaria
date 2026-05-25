@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doces | Sabores da Casa</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#eef5ff;
+}
+
+
+header{
+    background:linear-gradient(to right,#1565c0,#42a5f5);
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+
+nav{
+    background:#1976d2;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#bbdefb;
+}
+
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+.galeria{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    text-align:center;
+    color:#1565c0;
+    padding:18px;
+}
+
+
+.botao{
+    display:block;
+    width:250px;
+    text-align:center;
+    margin:40px auto;
+    background:#1e88e5;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao:hover{
+    background:#1565c0;
+}
+
+
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Doces</h1>
+    <p>Veja deliciosas sobremesas e receitas doces</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="receitas-doces.html">Receitas</a>
+</nav>
+
+<div class="container">
+
+    <div class="galeria">
+
+        
+        <div class="card">
+            <img src="bolo de chocolate.jpg"
+            alt="Bolo de Chocolate">
+
+            <h2>Bolo de Chocolate</h2>
+        </div>
+
+        
+        <div class="card">
+            <img src="image-329.jpg"
+            alt="Brigadeiro">
+
+            <h2>Brigadeiro</h2>
+        </div>
+
+     
+        <div class="card">
+            <img src="Pudim-de-Leite-Condensado-Sem-Ovos.webp"
+            alt="Pudim">
+
+            <h2>Pudim</h2>
+        </div>
+
+       
+        <div class="card">
+            <img src="Cupcake-RedVelvet.jpg"
+            alt="Cupcake">
+
+            <h2>Cupcake</h2>
+        </div>
+
+    </div>
+
+    <a href="receitas-doces.html" class="botao">
+        Ver Receitas dos Doces
+    </a>
+
+</div>
+
+<footer>
+    <p>© 2026 Sabores da Casa 💙</p>
+</footer>
+
+</body>
+</html>
