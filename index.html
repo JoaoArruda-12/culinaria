@@ -1,73 +1,248 @@
-html id="indexhtml-culinaria"
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
+
 <title>Sabores da Casa</title>
 
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#eef5ff;
+}
+
+/* CAPA */
+.hero{
+    background:linear-gradient(rgba(21,101,192,0.75),
+    rgba(66,165,245,0.75)),
+    url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400');
+
+    background-size:cover;
+    background-position:center;
+
+    height:70vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* MENU */
+nav{
+    background:#1976d2;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#bbdefb;
+}
+
+/* CONTEÚDO */
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.titulo{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:35px;
+}
+
+.categorias{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* CARDS */
+.card{
+    width:360px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card-content{
+    text-align:center;
+    padding:25px;
+}
+
+.card h2{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.botao{
+    display:inline-block;
+    background:#1e88e5;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:15px;
+    font-weight:bold;
+}
+
+.botao:hover{
+    background:#1565c0;
+}
+
+/* RODAPÉ */
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    .hero{
+        height:auto;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
+
+</style>
 </head>
 <body>
 
-<header>
-    <h1>🍽️ Delícias do Dia </h1>
-    <p>Escolha entre receitas doces e salgadas</p>
-</header>
+<!-- CAPA -->
+<section class="hero">
 
+    <div class="hero-content">
+
+        <h1>🍽️ Sabores da Casa</h1>
+
+        <p>
+            Bem-vindo ao nosso site de culinária!
+            Explore deliciosas receitas doces e salgadas,
+            descubra novos sabores e aprenda pratos incríveis.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MENU -->
 <nav>
     <a href="index.html">Início</a>
     <a href="salgados.html">Salgados</a>
     <a href="doces.html">Doces</a>
 </nav>
 
+<!-- CONTEÚDO -->
 <div class="container">
+
+    <h1 class="titulo">
+        Escolha sua categoria favorita 🍴
+    </h1>
 
     <div class="categorias">
 
-       
+        <!-- SALGADOS -->
         <div class="card">
-            <img src="macarrão ao molho branco.jpg">
-            <img src="Hamburguer-artesanal.webp">
-            <img src="lasanha-bolonhesa-na-pressao.jpg">
-            <img src="ai-generated-freshly-fried-gourmet-french-fries-a-crunchy-and-unhealthy-snack-generated-by-ai-photo.jpg">
-            
+
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800">
 
             <div class="card-content">
+
                 <h2>🍔 Salgados</h2>
 
                 <p>
-                    Hambúrguer, lasanha, macarrão cremoso,
-                    batata frita e muito mais.
+                    Macarrão cremoso, hambúrguer,
+                    lasanha, batata frita e muito mais.
                 </p>
 
                 <a href="salgados.html" class="botao">
                     Ver Salgados
                 </a>
+
             </div>
         </div>
 
-        
+        <!-- DOCES -->
         <div class="card">
-            <img src="bolo de chocolate.jpg">
-            <img src="image-329.jpg">
-            <img src="Pudim-de-Leite-Condensado-Sem-Ovos.webp">
-            <img src="Cupcake-RedVelvet.jpg">
-         
 
-          
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800">
 
             <div class="card-content">
+
                 <h2>🍰 Doces</h2>
 
                 <p>
-                    Bolos, brigadeiro, pudim,
-                    cupcakes e sobremesas deliciosas.
+                    Bolo de chocolate, brigadeiro,
+                    pudim, cupcake e sobremesas deliciosas.
                 </p>
 
                 <a href="doces.html" class="botao">
                     Ver Doces
                 </a>
+
             </div>
         </div>
 
@@ -81,4 +256,3 @@ html id="indexhtml-culinaria"
 
 </body>
 </html>
-
